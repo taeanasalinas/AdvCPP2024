@@ -24,13 +24,14 @@ int main() {
 
   if(inFile.is_open()) 
   {
-    float a, b, c, d, n, m, x, y;
+    float a, b, n, m, x, y;
     inFile >> a, b;
     inFile >> n, m;
     inFile >> x, y;
     
 
-    cout << a << " + " << b << " = " << a + b << endl;
+    cout << a << endl;
+    cout << x << endl;
 
     inFile.close();
   } else {
