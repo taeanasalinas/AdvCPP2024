@@ -1,4 +1,5 @@
 #include <iostream>
+#include <fstream>
 
 using namespace std;
 
@@ -17,10 +18,27 @@ T findMin(T a, T b) {
 }
 int main() {
 
-  cout << "Max of 3 and 7: " << findMax(3, 7) << endl; 
-  cout << "Min of 3 and 7: " << findMin(3, 7) << endl;
+  ifstream inFile;
+
+  inFile.open("Fractions.txt");
+
+  if(inFile.is_open()) 
+  {
+    float a, b, c, d, n, m, x, y;
+    inFile >> a, b;
+    inFile >> n, m;
+    inFile >> x, y;
+    
+
+    cout << a << " + " << b << " = " << a + b << endl;
+
+    inFile.close();
+  } else {
+    cout << "Error on file" << endl;
+  }
 
 
+  
 
   return 0;
 
