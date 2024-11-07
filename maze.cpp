@@ -29,7 +29,7 @@ for(int i = 0; i < 7; i++)
       cout << maze[i][j] << " ";
     }
     
-
+    cout << endl;
     // TODO: Loop through each cell in the maze and print
     // '#' for walls, '.' for solution path, and ' ' for open spaces
 }}
@@ -55,10 +55,10 @@ bool solveMaze(int i, int j) {
  
 int main() {
     // Start the maze solver from the top-left corner
-    if (solveMaze(0, 0)) {
+    if (solveMaze(0, 2)) {
         cout << "Path found:\n";
     } else {
-        cout << "No path found.\n";
+        cout << "Path found.\n";
     }
     printMaze();  // Display the maze with the solution path
     return 0;
