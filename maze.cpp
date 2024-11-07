@@ -5,9 +5,7 @@ using namespace std;
 const int i = 7;
 const int j = 6;
  
- 
-
-// Maze representation
+ // Maze representation
 // 0 - Open path
 // 1 - Wall
 // 2 - Part of the solution path
@@ -23,8 +21,7 @@ int maze[i][j] = {
  
 // Function to print the maze with solution path
 void printMaze() {
-   
-    
+       
 for(int i = 0; i < 7; i++)
   {
     for(int j = 0; j < 6; j++)
@@ -33,7 +30,6 @@ for(int i = 0; i < 7; i++)
     }
     
 
-    cout << endl;
     // TODO: Loop through each cell in the maze and print
     // '#' for walls, '.' for solution path, and ' ' for open spaces
 }}
