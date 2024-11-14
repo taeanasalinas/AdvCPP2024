@@ -8,14 +8,14 @@ int main() {
  
     int testData[] = {30, 25, 35, 20, 40};
  
-    // Test Ordered Circular Linked List
+    
     cout << "Ordered Circular Linked List:" << endl;
     for (int value : testData) {
         circularList.insertOrdered(value);
     }
     circularList.printList();
  
-    // Test Ordered Doubly Linked List
+
     cout << "\nOrdered Doubly Linked List:" << endl;
     for (int value : testData) {
         doublyList.insertOrdered(value);
